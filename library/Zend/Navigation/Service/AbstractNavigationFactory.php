@@ -145,6 +145,8 @@ abstract class AbstractNavigationFactory implements FactoryInterface
                 if (!isset($page['request'])) {
                     $page['request'] = $request;
                 }
+            } else {
+                $page = null;
             }
 
             if (isset($page['pages'])) {
